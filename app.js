@@ -31,11 +31,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Set static folder
-app.use(express.static(path.join(__dirname, 'public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Express session
 app.use(session({
-  secret: 'secret-1',
+  secret: 'secret',
   saveUnitialized: true,
   resave: true
 }));
